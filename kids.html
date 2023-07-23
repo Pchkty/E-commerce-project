@@ -1,0 +1,401 @@
+<html lang="en">
+<head>
+  <!--Metadata Setup-->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fontawsome Linking-->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fontawesome.min.css"
+  />
+  <!-- Bootstrap Linking-->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous"
+  />
+  <!--CSS Linking-->
+  <link rel="stylesheet" href="style.css" />
+  <!--Popperjs Linking-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  <!--Page Title-->
+  <title>Dresses</title>
+  <!--Internal Linking-->
+  <!-- Calling jquery first -->
+  <script
+    language="JavaScript"
+    type="text/javascript"
+    src="scripts/jquery.js"
+  ></script>
+  <script
+    language="JavaScript"
+    type="text/javascript"
+    src="scripts/bootstrap.min.js"
+  ></script>
+  <!-- Carousel -->
+  <script language="JavaScript" type="text/javascript">
+    $(document).ready(function () {
+      $(".carousel").carousel({
+        interval: 3000,
+      });
+    });
+  </script>
+  <style>
+    .row1{
+      display: flex;
+      box-shadow: black;
+    }
+    .row2{
+      display: flex;
+      box-shadow: black;
+    }
+    .header_dress{
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .wrapper {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .content {
+        flex: 1;
+      }
+      .white-break-line {
+        border-top: 1px solid white;
+        text-align: center;
+      }
+      .bg_img {
+        image-resolution: 1080px;
+      }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="first_header">
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary"
+          data-bs-theme="dark"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="Logo.png"
+                width="30"
+                height="30"
+                class="d-inline-block align-top"
+                alt="logo"
+              />E-commerce
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!--<unused>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Men Clothing</a></li>
+                <li><a class="dropdown-item" href="#">Women Clothing</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Kinds Clothing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </unused>-->
+              <form class="d-flex mx-auto" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+
+              <div class="top_right_grp">
+                <div class="container-fluid">
+                  <a href="cart.html"
+                    ><img
+                      src="cart.png"
+                      width="40"
+                      height="39"
+                      class="d-inline-block align-top"
+                      alt="logo"
+                  /></a>
+                </div>
+                <div class="login_button">
+                  <a class="btn btn-primary" href="login.html" role="button"
+                    >Login</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="second_header">
+        <nav
+          class="navbar navbar-expand-sm bg-body-tertiary"
+          data-bs-theme="light"
+        >
+          <div class="d-flex mx-auto">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html">All Product</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Women
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="women_dress.html">Dresses</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="Women_pants.html">Pants</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="women_Skirts.html">Skirts</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Men
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="men_shirt.html">Shirt</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="men_pants.html">Pants</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="men_hoodies.html">Hoodies</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kids.html">Kids</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="content">
+
+    
+  <div class="container">
+    
+    <h2 class="header_dress">Kids Dress Collection</h2>
+    <div class="row1">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="kids/kid1.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="kids/kid2.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="kids/kid4.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="kids/kid5.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="row2">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="kids/kid6.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="kids/kid7.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="kids/kid8.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="Men/hoodies6.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  </div>
+  <div class="footer">
+    <footer class="bg-dark text-center text-lg-start text-white">
+      <div class="white-break-line"></div>
+      <div class="container p-4">
+        <div class="row mt-4">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Women</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="women_dress.html" class="text-white"
+                  ><i class="fas fa-book fa-fw fa-sm me-2"></i>Dresses</a
+                >
+              </li>
+              <li>
+                <a href="Women_pants.html" class="text-white"
+                  ><i class="fas fa-book fa-fw fa-sm me-2"></i>Pants</a
+                >
+              </li>
+              <li>
+                <a href="women_Skirts.html" class="text-white"
+                  ><i class="fas fa-user-edit fa-fw fa-sm me-2"></i
+                  >Skirts</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Men</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="men_shirt.html" class="text-white"
+                  ><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i
+                  >Shirt</a
+                >
+              </li>
+              <li>
+                <a href="men_pants.html" class="text-white"
+                  ><i class="fas fa-backspace fa-fw fa-sm me-2"></i>Pants</a
+                >
+              </li>
+              <li>
+                <a href="men_hoodies.html" class="text-white"
+                  ><i class="far fa-file-alt fa-fw fa-sm me-2"></i
+                  >Hoodies</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Kids</h5>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-white"
+                  ><i class="fas fa-at fa-fw fa-sm me-2"></i>Home</a
+                >
+              </li>
+              <li>
+                <a href="login.html" class="text-white"
+                  ><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i
+                  >Login</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="text-white"
+                  ><i class="fas fa-envelope fa-fw fa-sm me-2"></i
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="white-break-line"></div>
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        Copyright ©E-commerce 2023-24
+      </div>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+ /*body{
+  background-color: cadetblue;
+  background-image: url('../New_folder/Background_Image.jpeg');
+  background-size: auto;
+  background-repeat: no-repeat;}*/
+.top_right_grp{
+  display: flex;
+}
+  .cards-wrapper{
+    display: flex;
+    border-radius: 50px;
+    margin: 5rem;}
+
+  .card{
+    margin: .3rem;
+    border: none;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18); 
+    border-radius: 20px;
+    padding: auto;
+    height: auto;
+    width: auto;
+    
+  }
+
+  .featured{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0.5rem; 
+  }
+  
+
+  .carousel-inner{
+    padding: 1em;
+  }
+  
+  .navbar-brand{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: aliceblue;
+  color: #835aed;
+  border-radius: 7px;
+  box-shadow: 2px 6px 8px 0 #835aed; ;
+  }
+
+  .slogan{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+  }
+
+  .content {
+    background-image: url('https://images.pexels.com/photos/2909094/pexels-photo-2909094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,43 @@
+E-Commerce App
+
+Task Done::
+
+Problem Statement
+Create the UI design of the e-commerce website, which the users will be using to browse and
+purchase the products. This is the first part of the product. Since we are only working on the frontend part of this project, you don’t need to create the UI dashboard for the admin side as of now.
+Build an E-commerce website UI with the following features/pages:
+1. Header: A header with 2 parts – the first part contains the logo, search box, and the cart
+and login buttons. The second part is the navigation bar that contains the links to the
+products and the categories.
+2. Footer: A footer that again lists the categories and links, with a copyright message at the
+end. The header and footer should be common for all the pages.
+3. Home Page: A home page that contains a cover image with the company’s slogan right
+below the header and a slider that lists the featured products (right above the footer).
+4. Product Pages: The following product pages:
+a. All products page that lists all the products in a grid format.
+b. Women’s category page with the following sub-categories
+i. All products
+ii. Dresses
+iii. Pants
+iv. Skirts
+c. Men’s category page with the following sub-categories:
+i. All products
+ii. Shirts
+iii. Pants
+iv. Hoodies
+d. Kids category page that lists all the kid clothes.
+5. Contact Page: A decent-looking contact us page that asks for the user’s name, e-mail, and
+message.
+6. Login Page: A login page that asks for the user’s E-mail and password
+7. Cart Page: A cart page that lists all the products which we have added to our cart, with a
+“+ and –” button to increase and decrease the product quantity and a delete button to
+delete the product from the cart. You’ll make these buttons and features work later. For
+now, just create the design
+
+Thought Note::
+
+1. Add own theme
+2. Login system is working, credential: admain@admin.com Password: 123456
+3. Added Crousal
+4. Landing page is done as per specification
+5. Added Cart page

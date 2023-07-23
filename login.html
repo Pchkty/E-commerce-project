@@ -1,0 +1,266 @@
+<html lang="en">
+<head>
+  <!--Metadata Setup-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fontawsome Linking-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fontawesome.min.css">
+  <!-- Bootstrap Linking-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!--CSS Linking-->
+  <link rel="stylesheet" href="style.css">
+  <!--Javascript Linking-->
+  <script src="script.js"></script>
+  <!--Page Title-->
+  <title>Login Page </title>
+  <!--Internal CSS-->
+  <style>
+    .wrapper{
+       min-height: 100%;
+       display: flex;
+       flex-direction: column;}
+    .content{
+       flex: 1;}
+    .white-break-line{
+        border-top: 1px solid white;
+        text-align: center;}
+    .bg_img{
+      image-resolution: 1080px;}
+  </style>  
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+   <div class="first_header">
+     <nav class="navbar navbar-expand-lg bg-body-tertiary"  data-bs-theme="dark">
+       <div class="container-fluid">
+         <a class="navbar-brand" href="#">
+           <img src="Logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo">E-commerce
+         </a>
+         
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <!--<unused>
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">Link</a>
+             </li>
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Dropdown
+               </a>
+               <ul class="dropdown-menu">
+                 <li><a class="dropdown-item" href="#">Men Clothing</a></li>
+                 <li><a class="dropdown-item" href="#">Women Clothing</a></li>
+                 <li><hr class="dropdown-divider"></li>
+                 <li><a class="dropdown-item" href="#">Kinds Clothing</a></li>
+               </ul>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link disabled">Disabled</a>
+             </li>
+           </ul>
+         </unused>-->
+           <form class="d-flex mx-auto" role="search">
+             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+             <button class="btn btn-outline-success" type="submit">Search</button>
+             
+           </form> 
+           
+           <div class="top_right_grp">
+             <div class="container-fluid" >
+               <a href="cart.html"><img src="cart.png" width="40" height="39" class="d-inline-block align-top" alt="logo"></a>
+           </div>
+           <div class="login_button">
+             <a class="btn btn-primary" href="login" role="button">Login</a>
+           </div>
+           </div> 
+         </div>
+       </div>
+     </nav>
+   </div>
+   <div class="second_header">
+     <nav class="navbar navbar-expand-sm bg-body-tertiary"  data-bs-theme="light">
+        <div class="d-flex mx-auto">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="product.html">All Product</a>
+             </li>
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Women
+               </a>
+               <ul class="dropdown-menu">
+                 <li><a class="dropdown-item" href="#">Men Clothing</a></li>
+                 <li><a class="dropdown-item" href="#">Women Clothing</a></li>
+                 <li><hr class="dropdown-divider"></li>
+                 <li><a class="dropdown-item" href="#">Kinds Clothing</a></li>
+               </ul>
+             </li>
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Men
+               </a>
+               <ul class="dropdown-menu">
+                 <li><a class="dropdown-item" href="#">Men Clothing</a></li>
+                 <li><a class="dropdown-item" href="#">Women Clothing</a></li>
+                 <li><hr class="dropdown-divider"></li>
+                 <li><a class="dropdown-item" href="#">Kinds Clothing</a></li>
+               </ul>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">Kids</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="contact.html">Contact</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+    </div> 
+    </div>
+    <div class="content">
+        <div class="subcontent">   
+        <div id="carouselExampleCaptions" class="carousel slide carousel-dark" data-ride="carousel">
+        <div class="slogan">
+          <h1>BE-Commerce</h1>
+          <h6>Best place for online shoping</h6>
+        </div>
+      </div>
+       
+      <!--
+      <div class="container">  
+        <h2>Login</h2>  
+        <form class="form-horizontal">  
+            <div class="form-group"> <label class="control-label col-sm-2" for="email">User Name</label>  
+                <div class="col-sm-10"> <input type="email" class="form-control" id="email" placeholder="Enter email"> </div>  
+            </div>  
+            <div class="form-group"> <label class="control-label col-sm-2" for="pwd">Password</label>  
+                <div class="col-sm-10"> <input type="password" class="form-control" id="pwd" placeholder="Enter password" width="200px"> </div>  
+            </div>  
+            <div class="form-group">  
+                <div class="col-sm-offset-2 col-sm-10">  
+                    <div class="checkbox"> <label><input type="checkbox"> Remember me</label> </div>  
+                </div>  
+            </div>  
+            <div class="form-group">  
+                <div class="col-sm-offset-2 col-sm-10"> <button type="submit" class="btn btn-primary">Submit</button> </div>  
+            </div>  
+        </form>  
+    </div>
+    -->
+    <div class="container">
+      <h2>Login</h2>
+      <form class="form-horizontal" onsubmit="validateCredentials(event)">
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="email">User_id</label>
+              <div class="col-sm-10">
+                  <input type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>
+          </div>
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Password</label>
+              <div class="col-sm-10">
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+              </div>
+          </div>
+          <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                      <label><input type="checkbox"> Remember me</label>
+                  </div>
+              </div>
+          </div>
+          <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+          </div>
+      </form>
+  </div>
+ 
+  </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+     <footer class="bg-dark text-center text-lg-start text-white">
+       <div class="white-break-line"></div>
+       <div class="container p-4">
+       <div class="row mt-4">
+         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+           <h5 class="text-uppercase">Women</h5>
+           <ul class="list-unstyled mb-0">
+             <li><a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>Dresses</a></li>
+             <li><a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>Pants</a></li>
+             <li><a href="#!" class="text-white"><i class="fas fa-user-edit fa-fw fa-sm me-2"></i>Skirts</a></li>
+           </ul>
+         </div>
+         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+           <h5 class="text-uppercase">Men</h5>
+           <ul class="list-unstyled">
+             <li>
+               <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Shirt</a>
+             </li>
+             <li>
+               <a href="#!" class="text-white"><i class="fas fa-backspace fa-fw fa-sm me-2"></i>Pants</a>
+             </li>
+             <li>
+               <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Hoodies</a>
+             </li>
+           </ul>
+         </div>
+         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+           <h5 class="text-uppercase">Kids</h5>
+         
+         </div>
+         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+           <h5 class="text-uppercase">Links</h5>
+           <ul class="list-unstyled">
+             <li>
+               <a href="index.html" class="text-white"><i class="fas fa-at fa-fw fa-sm me-2"></i>Home</a>
+             </li>
+             <li>
+               <a href="login.html" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Login</a>
+             </li>
+             <li>
+               <a href="contact.html" class="text-white"><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Contact</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+       </div>
+
+
+
+       <div class="white-break-line"></div>
+
+
+
+       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        Copyright ©E-commerce 2023-24
+       <!--<a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>-->
+       </div>
+     </footer>
+    </div> 
+ </div>
+</body>
+</html>
